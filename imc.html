@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="X-UA-Compatible" content="IE=edge">
+        <meta name="Viewport" content="width=device-width, initial-scale=2.0">
+        <title>GYM2U</title>
+        <link rel="shortcut icon" href="./images/logoudemgym.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/calendar.css">
+        <script src="https://kit.fontawesome.com/1519ca0b42.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <img src="./images/logoudemgym.png" class="nav__title">
+                </div>
+
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">INICIO</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">ACERCA DE</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">NOTICIAS</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">BUZÓN DE SUGERENCIAS</a>
+                    </li>
+
+                    <img src="./images/close.svg" class="nav__close">
+                </ul>
+
+                <div class="nav__menu">
+                    <img src="./images/menuleft.svg" class="nav__img">
+                </div>
+            </nav>
+            <nav class="nav container">
+                <section class="access container">
+                    <div class="home__container">
+                        <div class="user__container">
+                            <article class="imc__icons">
+                                <img src="./images/imagen rostro.jpg" class="user__image">
+                                <h7 class="user__title">VIVIANA MUÑOZ</h7>
+                                <h8 class="user__title">ESTUDIANTE</h8>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-person"></i>
+                                    <a href="./imc.html" class="icon__title">CALCULAR IMC</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <a href="./calendarUser.html" class="icon__title">CALENDARIO</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <a href="./manageUser.html" class="icon__title">GESTIONAR AGENDAMIENTOS</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-sharp fa-solid fa-apple-whole"></i>
+                                    <a href="myDiet.html" class="icon__title">MI ALIMENTACIÓN</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-user"></i>
+                                    <a href="./editProfile.html" class="icon__title">EDITAR PERFIL</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-person-hiking"></i>
+                                    <a href="./myProcess.html" class="icon__title">MI PROCESO</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-power-off"></i>
+                                    <a href="./login.html" class="icon__title">CERRAR SESIÓN</a>
+                                </li>
+                            </article>
+                        </div>
+                        <div class="root">
+                            <article class="imc__icon">
+                                <h8 class="imc__title">PESO</h8>
+                                <h9 class="imc__title">52.1</h9>
+                                <h9 class="imc__title">Kg</h9>
+                            </article>
+                            <article class="imc__icon">
+                                <h8 class="imc__title">GRASA</h8>
+                                <h9 class="imc__title">15.1</h9>
+                                <h9 class="imc__title">%</h9>
+                            </article>
+                            <article class="imc__icon">
+                                <h8 class="imc__title">MÚSCULO</h8>
+                                <h9 id="musc__value" class="imc__title">41.1</h9>
+                                <h9 class="imc__title">Kg</h9>
+                            </article>
+                            <article class="submit__icons">
+                                <a href="./newImc.html" class="imc__submit" id="new__imc">REALIZAR NUEVO PESAJE</a>
+                                <a href="#" class="imc__submit" id="new__kg">REGISTRAR MI PESO</a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </nav>
+        </header>
+        <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+        <script  type="text/javascript" src="./js/calendar.js"></script>
+        <script type="text/javascript">
+            let calendar = new Calendar('calendar');
+            calendar.getElement().addEventListener('change', e => {
+                console.log(calendar.value().format('LLL'));
+            });
+        </script>
+        <script src="./js/imc.js"></script>
+        <script src="./js/menu.js"></script>
+        <script src="./api/users.js"></script>
+        <script src="./js/calendarUser.js"></script>
+    </body>
+</html>

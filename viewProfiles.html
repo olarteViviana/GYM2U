@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="X-UA-Compatible" content="IE=edge">
+        <meta name="Viewport" content="width=device-width, initial-scale=2.0">
+        <title>GYM2U</title>
+        <link rel="shortcut icon" href="./images/logoudemgym.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/statistics.css">
+        <script src="https://kit.fontawesome.com/1519ca0b42.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    </head>
+    <body>
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <img src="./images/logoudemgym.png" class="nav__title">
+                </div>
+
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">INICIO</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">ACERCA DE</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">NOTICIAS</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">BUZÓN DE SUGERENCIAS</a>
+                    </li>
+
+                    <img src="./images/close.svg" class="nav__close">
+                </ul>
+
+                <div class="nav__menu">
+                    <img src="./images/menuleft.svg" class="nav__img">
+                </div>
+            </nav>
+            <nav class="nav container">
+                <section class="access container">
+                    <div class="home__container">
+                        <div class="user__container">
+                            <article class="imc__icons">
+                                <img src="./images/user.png" class="user__image">
+                                <h8 class="user__title">ADMINISTRADOR</h8>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-person"></i>
+                                    <a href="./viewProfiles.html" class="icon__title">VER PERFILES</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <a href="./calendarAdmin.html" class="icon__title">CALENDARIO</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <a href="./manageS.html" class="icon__title">GESTIONAR AGENDAMIENTOS</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-sharp fa-solid fa-apple-whole"></i>
+                                    <a href="./recommends.html" class="icon__title">RECOMENDACIONES</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-user"></i>
+                                    <a href="./editNews.html" class="icon__title">EDITAR NOTICIAS</a>
+                                </li>
+                                <br>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-power-off"></i>
+                                    <a href="./login.html" class="icon__title">CERRAR SESIÓN</a>
+                                </li>
+                            </article>
+                        </div>
+                        <div class="root">
+                            <article class="imc__icons">
+                                <form id="form__profile">
+                                    <h8 class="home__title">VIVIANA MUÑOZ OLARTE</h8>
+                                    <h9 class="icon__title">FECHA DE INGRESO:</h9>
+                                    <article class="access__home">01-11-2022</article>
+                                    <h9 class="icon__title">GENERO:</h9>
+                                    <article class="access__home">F</article>
+                                    <h9 class="icon__title">FECHA DE NACIMIENTO:</h9>
+                                    <article class="access__home">09-01-2001</article>
+                                    <h9 class="icon__title">RH:</h9>
+                                    <article class="access__home">O+</article>
+                                    <h9 class="icon__title">VER FORMULARIO:</h9>
+                                    <a href="#" class="access__home">FORMULARIO</a>
+                                </form>
+                            </article>
+                        </div>
+                        <div>
+                            <h9>CÉDULA A BUSCAR</h9>
+                            <li class="nav__items">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                <input type="search" id="search__profile" value="1000305187" class="search__input">
+                            </li>
+                            <br>
+                            <br>
+                            <canvas id="myChart" width="300" height="300"></canvas>
+                        </div>
+                    </div>
+                </section>  
+            </nav>
+        </header>
+        <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+        <script src="./js/statistics.js"></script>
+    </body>
+</html>

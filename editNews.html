@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="X-UA-Compatible" content="IE=edge">
+        <meta name="Viewport" content="width=device-width, initial-scale=2.0">
+        <title>GYM2U</title>
+        <link rel="shortcut icon" href="./images/logoudemgym.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/statistics.css">
+        <script src="https://kit.fontawesome.com/1519ca0b42.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    </head>
+    <body>
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <img src="./images/logoudemgym.png" class="nav__title">
+                </div>
+
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">INICIO</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">ACERCA DE</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">NOTICIAS</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">BUZÓN DE SUGERENCIAS</a>
+                    </li>
+
+                    <img src="./images/close.svg" class="nav__close">
+                </ul>
+
+                <div class="nav__menu">
+                    <img src="./images/menuleft.svg" class="nav__img">
+                </div>
+            </nav>
+            <nav class="nav container">
+                <section class="access container">
+                    <div class="home__container">
+                        <div class="user__container">
+                            <article class="imc__icons">
+                                <img src="./images/user.png" class="user__image">
+                                <h8 class="user__title">ADMINISTRADOR</h8>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-person"></i>
+                                    <a href="./viewProfiles.html" class="icon__title">VER PERFILES</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <a href="./calendarAdmin.html" class="icon__title">CALENDARIO</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <a href="./manageS.html" class="icon__title">GESTIONAR AGENDAMIENTOS</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-sharp fa-solid fa-apple-whole"></i>
+                                    <a href="./recommends.html" class="icon__title">RECOMENDACIONES</a>
+                                </li>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-user"></i>
+                                    <a href="#" class="icon__title">EDITAR NOTICIAS</a>
+                                </li>
+                                <br>
+                                <li class="nav__items">
+                                    <i class="fa-solid fa-power-off"></i>
+                                    <a href="./login.html" class="icon__title">CERRAR SESIÓN</a>
+                                </li>
+                            </article>
+                        </div>
+                        <div class="root">
+                            <br>
+                            <a href="#" class="access__cta">AGENDAR PUBLICACIÓN</a>
+                            <br>
+                            <a href="#" class="access__cta">ELIMINAR PUBLICACIÓN</a>
+                            <br>
+                            <article class="imc__icons">
+                                <h8 class="home__title">NUEVO POST</h8>
+                                <br>
+                                <form>
+                                    <h9 class="home__title">AGREGAR TITULO: *</h9>
+                                    <input type="text" class="news__title" placeholder="TITULO">
+                                    <br>
+                                    <div>
+                                        <div>
+                                            <h9 class="home__title">AGREGAR IMAGEN: *</h9>
+                                            <button id="button" class="news__title">ARCHIVOS</button>
+                                            <input type="file" name="" id="input__file" hidden multiple>
+                                        </div>
+                                        <div id="preview"></div>
+                                    </div>
+                                    <div>
+                                        <form action="" method="POST">
+                                            <h9 class="home__title">AGREGAR UNA DESCRIPCIÓN: *</h9>
+                                            <input type="text" class="news__input" placeholder="DESCRIPCIÓN">
+                                        </form>
+                                    </div>
+                                </form>
+                            </article>
+                        </div>
+                        <div>
+                            <article class="imc__icons">
+                                <h8 class="home__title">EL EQUIPO FEMENINO DE BALONCESTO SIGUE INVICTO</h8>
+                                <img src="./images/coliseo.jpg" class="access__icon">
+                                <h9 class="home__title">Dirigida a niños y jóvenes desde los 6 hasta los 16 años en fútbol, dirigida a niños a partir de los 4 años, jóvenes y adultos en natación, para mayores de 14 años se les enseña baloncesto.</h9>
+                            </article>
+                        </div>
+                    </div>
+                </section>  
+            </nav>
+        </header>
+        <script src="./js/editNews.js"></script>
+    </body>
+</html>

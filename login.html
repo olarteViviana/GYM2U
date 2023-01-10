@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="X-UA-Compatible" content="IE=edge">
+        <meta name="Viewport" content="width=device-width, initial-scale=2.0">
+        <title>GYM2U</title>
+        <link rel="shortcut icon" href="./images/logoudemgym.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <img src="./images/logoudemgym.png" class="nav__title">
+                </div>
+
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">INICIO</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">ACERCA DE</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">NOTICIAS</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">BUZÓN DE SUGERENCIAS</a>
+                    </li>
+
+                    <img src="./images/close.svg" class="nav__close">
+                </ul>
+
+                <div class="nav__menu">
+                    <img src="./images/menuleft.svg" class="nav__img">
+                </div>
+            </nav>
+            <section class="hero__container container">
+                <form class="login__cta--show" method="GET">
+                    <article class="login__article">
+                        <h2 class="icon__title">INICIAR SESIÓN</h2>
+                        <div class="user__input">
+                        <input 
+                            id="usuario" type="text" class="login__user__input" name="username" placeholder="USUARIO">
+                        </div>
+                        <div class="passw__input">
+                        <input 
+                            id="contraseña" type="password" class="login__passw__input" name="password" placeholder="CONTRASEÑA">
+                        </div>
+                        <a href="#" class="login__submit">INGRESAR</a>
+                    </article> 
+                </form>
+            </section>
+        </header>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/login.js"></script>
+        <script src="./js/menu.js"></script>
+        <script src="./api/users.js"></script>
+    </body>
+</html>
